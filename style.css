@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+/*Config Global*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Celular*/
+
+
+@media (max-width: 460px) {
+
+
+    /*Área De navegação*/
+
+
+}
+
+
+/*Pc/Laptop*/
+
+
+@media (min-width: 1000px) {
+
+
+    /*Área De navegação*/
+
+
+    a{
+        text-decoration: none;
+    }
+    .container-navbar{
+        width: 100%;
+        height: auto;
+        position: fixed;
+        background-color: blueviolet;
+        top: 0;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .navbar-items{
+        display: flex;
+    }
+
+    .navbar-items ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .logo-navbar{
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+
+}
+
+
+/*Tablet*/
+
+
+@media (min-width: 461px) and (max-width: 999px) {
+
+
+    /*Área De navegação*/
+
+
+}
