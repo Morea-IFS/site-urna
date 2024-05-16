@@ -31,100 +31,11 @@
 
     /*Área De navegação*/
 
+    body {
+        overflow-x: hidden;
+    }
 
     a {
-
-        text-decoration: none;
-    }
-
-    .container-navbar {
-        display: flex;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: solid 2px black;
-        top: 0;
-    }
-
-    .navbar {
-        display: flex;
-    }
-
-    .navbar-items {
-        display: flex;
-        padding-right: 70px;
-    }
-
-    .navbar-items ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        font-family: 'well';
-        font-size: 30px;
-        gap: 30px;
-    }
-
-    .logo-navbar {
-        display: flex;
-        margin-inline: 3%;
-    }
-
-    .logo {
-        width: 75px;
-        height: 75px;
-    }
-
-    .link-navbar {
-        color: black;
-    }
-
-    #hat {
-        display: inline-block;
-        margin-top: 10%;
-        margin-left: 5%;
-        height: 25em;
-        width: 25em;
-    }
-
-    #div-title {
-        display: inline-block;
-    }
-
-    #title {
-        display: flex;
-        font-family: 'adumu';
-        font-size: 40px;
-    }
-
-    #title2 {
-        font-family: 'well';
-        font-size: 40px;
-        color: white;
-        background-color: black;
-        width: 131px;
-    }
-
-    #text {
-        font-family: 'well';
-        font-size: 20px
-    }
-
-}
-
-
-/*Pc/Laptop*/
-
-
-@media (min-width: 1000px) {
-
-
-    /*Área De navegação*/
-
-
-    a {
-
         text-decoration: none;
     }
 
@@ -142,20 +53,78 @@
 
     .navbar {
         display: flex;
+        padding: 30px;
     }
 
-    .navbar-items {
-        display: flex;
-        padding-right: 70px;
+    .nav-list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80vw;
+        transform: translateX(100%);
+        background-color: rgb(54, 51, 51);
     }
 
-    .navbar-items ul {
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    .nav-list ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        opacity: 0;
+        align-items: flex-end;
         list-style: none;
+        margin: 5em 2em 0 0;
         font-family: 'well';
-        font-size: 25px;
-        gap: 30px;
+        font-size: 20px;
+        gap: 22px;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        right: 20px;
+        display: block;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+        margin: 8px;
     }
 
     .logo-navbar {
@@ -164,62 +133,70 @@
     }
 
     .logo {
-        width: 75px;
-        height: 75px;
+        width: 40px;
+        height: 40px;
     }
 
     .link-navbar {
-        color: black;
+        color: white;
     }
 
-    #hat {
-        display: inline-block;
-        height: 10em;
-        width: 10em;
-        margin-top: 11%;
-        margin-left: 5%;
-        user-select: none;
+    .div-title {
+        margin: 100px 0 30px 40px;
     }
 
-    #div-title {
-        user-select: none;
-        margin-top: -5%;
-        margin-left: 10%;
+    .hat {
+        height: 8em;
+        width: 8em;
+        margin-bottom: -60px;
+        margin-left: -80px;
     }
 
-    #title {
-        display: flex;
+    .title {
         font-family: 'adumu';
-        font-size: 45px;
+        font-size: 35px;
+        user-select: none;
     }
 
-    #title2 {
+    .title2 {
         font-family: 'well';
-        font-size: 45px;
+        font-size: 35px;
         color: white;
         background-color: black;
-        width: 131px;
+        width: 115px;
     }
 
-    #text{
+    .text {
         font-family: 'well';
+        font-size: 16px;
+        margin-bottom: 25%;
     }
 
-    #cactus{
-        margin-top: 2%;
-        height: 15em;
-        width: 15em;
+    .cactus {
+        display: none;
     }
+
+    .all {
+        height: calc(100vh - 87px);
+        margin: 87px 6% 0 10%;
+        user-select: none;
+    }
+
+    .casal {
+        height: 19em;
+        width: 19em;
+    }
+
 }
 
 
-/*Tablet*/
+/*Pc/Laptop*/
 
 
-@media (min-width: 461px) and (max-width: 999px) {
+@media (min-width: 1000px) {
 
 
-    /*Área de navegação*/
+    /*Área De navegação*/
 
 
     a {
@@ -234,25 +211,27 @@
         height: auto;
         position: fixed;
         border-bottom: solid 2px black;
+        background-color: white;
         top: 0;
     }
 
     .navbar {
         display: flex;
+        padding: 30px;
     }
 
-    .navbar-items {
+    .nav-list {
         display: flex;
         padding-right: 70px;
     }
 
-    .navbar-items ul {
+    .nav-list ul {
         display: flex;
         flex-direction: row;
         list-style: none;
         font-family: 'well';
-        font-size: 30px;
-        gap: 30px;
+        font-size: 20px;
+        gap: 33px;
     }
 
     .logo-navbar {
@@ -269,28 +248,167 @@
         color: black;
     }
 
-    #hat {
-        display: inline-block;
-        margin-top: 12em;
-        margin-left: 2em;
+    .div-title {
+        margin-bottom: 30px;
+    }
+
+    .hat {
         height: 10em;
         width: 10em;
+        margin-bottom: -70px;
+        margin-left: -85px;
     }
 
-    #div-title {
-        display: inline-block;
-    }
-
-    #title {
+    .title {
+        display: flex;
         font-family: 'adumu';
-        font-size: 40px;
+        font-size: 45px;
+        user-select: none;
     }
 
-    #title2 {
+    .title2 {
         font-family: 'well';
-        font-size: 40px;
+        font-size: 45px;
         color: white;
         background-color: black;
         width: 131px;
     }
+
+    .text {
+        font-family: 'well';
+        font-size: 23px;
+    }
+
+    .cactus {
+        margin-top: 5%;
+        height: 15em;
+        width: 15em;
+    }
+
+    .all {
+        display: flex;
+        height: calc(100vh - 87px);
+        align-items: center;
+        justify-content: space-between;
+        margin: 87px 6% 0 10%;
+        user-select: none;
+    }
+
+    .casal {
+        height: 25em;
+        width: 25em;
+    }
+
+}
+
+
+/*Tablet*/
+
+
+@media (min-width: 461px) and (max-width: 999px) {
+
+
+    /*Área De navegação*/
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .container-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        border-bottom: solid 2px black;
+        background-color: white;
+        top: 0;
+    }
+
+    .navbar {
+        display: flex;
+        padding: 30px;
+    }
+
+    .nav-list {
+        display: flex;
+        padding-right: 30px;
+    }
+
+    .nav-list ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-family: 'well';
+        font-size: 20px;
+        gap: 33px;
+    }
+
+    .logo-navbar {
+        display: flex;
+        margin-inline: 3%;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .link-navbar {
+        color: black;
+    }
+
+    .div-title {
+        margin-bottom: 30px;
+    }
+
+    .hat {
+        height: 9em;
+        width: 9em;
+        margin-bottom: -70px;
+        margin-left: -85px;
+    }
+
+    .title {
+        display: flex;
+        font-family: 'adumu';
+        font-size: 45px;
+        user-select: none;
+    }
+
+    .title2 {
+        font-family: 'well';
+        font-size: 45px;
+        color: white;
+        background-color: black;
+        width: 131px;
+    }
+
+    .text {
+        font-family: 'well';
+        font-size: 20px;
+    }
+
+    .cactus {
+        margin-top: 5%;
+        height: 14em;
+        width: 14em;
+    }
+
+    .all {
+        display: flex;
+        height: calc(100vh - 87px);
+        align-items: center;
+        justify-content: space-between;
+        margin: 87px 6% 0 10%;
+        user-select: none;
+    }
+
+    .casal {
+        height: 19em;
+        width: 19em;
+    }
+
 }
