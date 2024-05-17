@@ -142,53 +142,6 @@
     .link-navbar {
         color: white;
     }
-
-    .div-title {
-        margin: 100px 0 30px 40px;
-    }
-
-    .hat {
-        height: 8em;
-        width: 8em;
-        margin-bottom: -60px;
-        margin-left: -80px;
-    }
-
-    .title {
-        font-family: 'adumu';
-        font-size: 35px;
-        user-select: none;
-    }
-
-    .title2 {
-        font-family: 'well';
-        font-size: 35px;
-        color: white;
-        background-color: black;
-        width: 115px;
-    }
-
-    .text {
-        font-family: 'well';
-        font-size: 16px;
-        margin-bottom: 25%;
-    }
-
-    .cactus {
-        display: none;
-    }
-
-    .all {
-        height: calc(100vh - 87px);
-        margin: 87px 6% 0 10%;
-        user-select: none;
-    }
-
-    .casal {
-        height: 19em;
-        width: 19em;
-    }
-
 }
 
 
@@ -248,58 +201,6 @@
     .link-navbar {
         color: black;
     }
-
-    .div-title {
-        margin-bottom: 30px;
-    }
-
-    .hat {
-        height: 10em;
-        width: 10em;
-        margin-bottom: -70px;
-        margin-left: -85px;
-    }
-
-    .title {
-        display: flex;
-        font-family: 'adumu';
-        font-size: 45px;
-        user-select: none;
-    }
-
-    .title2 {
-        font-family: 'well';
-        font-size: 45px;
-        color: white;
-        background-color: black;
-        width: 131px;
-    }
-
-    .text {
-        font-family: 'well';
-        font-size: 23px;
-    }
-
-    .cactus {
-        margin-top: 5%;
-        height: 15em;
-        width: 15em;
-    }
-
-    .all {
-        display: flex;
-        height: calc(100vh - 87px);
-        align-items: center;
-        justify-content: space-between;
-        margin: 87px 6% 0 10%;
-        user-select: none;
-    }
-
-    .casal {
-        height: 25em;
-        width: 25em;
-    }
-
 }
 
 
@@ -360,56 +261,4 @@
     .link-navbar {
         color: black;
     }
-
-    .div-title {
-        margin-bottom: 30px;
-    }
-
-    .hat {
-        height: 9em;
-        width: 9em;
-        margin-bottom: -70px;
-        margin-left: -85px;
-    }
-
-    .title {
-        display: flex;
-        font-family: 'adumu';
-        font-size: 45px;
-        user-select: none;
-    }
-
-    .title2 {
-        font-family: 'well';
-        font-size: 45px;
-        color: white;
-        background-color: black;
-        width: 131px;
-    }
-
-    .text {
-        font-family: 'well';
-        font-size: 20px;
-    }
-
-    .cactus {
-        margin-top: 5%;
-        height: 14em;
-        width: 14em;
-    }
-
-    .all {
-        display: flex;
-        height: calc(100vh - 87px);
-        align-items: center;
-        justify-content: space-between;
-        margin: 87px 6% 0 10%;
-        user-select: none;
-    }
-
-    .casal {
-        height: 19em;
-        width: 19em;
-    }
-
 }
