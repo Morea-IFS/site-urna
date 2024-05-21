@@ -29,7 +29,7 @@
 @media (max-width: 460px) {
 
 
-    /*Área de navegação*/
+    /*Área De navegação*/
 
     body {
         overflow-x: hidden;
@@ -142,9 +142,6 @@
     .link-navbar {
         color: white;
     }
-
-    /*Área de candidatos*/
-
 }
 
 
@@ -204,74 +201,6 @@
     .link-navbar {
         color: black;
     }
-
-
-    /*Área de candidatos*/
-
-
-    .title {
-        font-family: 'well';
-        font-size: 25px;
-        color: white;
-        background-color: black;
-        height: 35px;
-        width: 220px;
-        margin-bottom: 60px;
-    }
-
-    .candidates-king {
-        margin-top: 140px;
-        margin-left: 73px;
-    }
-
-    .all-candidates {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 2em;
-        height: auto;
-    }
-
-    .all-candidates-child {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 3rem;
-    }
-
-    .all-candidates-child-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        width: 12em;
-        background-color: #d9d9d9;
-        border: solid black 2px;
-        border-radius: 10px;
-    }
-
-    .all-candidates-child-item-img {
-        position: relative;
-        top: -50px;
-        width: 6em;
-        height: 6em;
-        border-radius: 256px;
-        background-color: black;
-    }
-
-    .text-candidates{
-        font-family: 'well';
-    }
-
-    .text-candidates-margin{
-        margin: 20px 15px 15px 15px;
-    }
-
-    .title-candidates{
-        font-family: 'adumu';
-        font-size: 25px;
-        margin: -40px 0 10px 0;
-    }
 }
 
 
@@ -281,7 +210,7 @@
 @media (min-width: 461px) and (max-width: 999px) {
 
 
-    /*Área de navegação*/
+    /*Área De navegação*/
 
 
     a {
@@ -332,7 +261,4 @@
     .link-navbar {
         color: black;
     }
-
-    /*Área de candidatos*/
-
 }
