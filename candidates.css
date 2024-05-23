@@ -19,8 +19,6 @@
     font-weight: normal;
 }
 
-/*Pc/Laptop*/
-
 
 /*Área De navegação*/
 
@@ -86,14 +84,23 @@ a {
     font-size: 25px;
     color: white;
     background-color: black;
-    height: 35px;
     width: 220px;
-    margin-bottom: 60px;
+    height: 35px;
+    margin-bottom: 40px;
 }
 
-.candidates-king {
-    margin-top: 140px;
-    margin-left: 73px;
+.title2 {
+    font-family: 'well';
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    width: 270px;
+    height: 35px;
+    margin-bottom: 40px;
+}
+
+.candidates-king-and-queen {
+    margin: 115px 0 -120px 73px;
 }
 
 .all-candidates {
@@ -145,9 +152,11 @@ a {
     margin: -40px 0 10px 0;
 }
 
-
-/*Celular*/
-
+.musician {
+    float: right;
+    height: 200px;
+    width: 200px;
+}
 
 @media (max-width: 460px) {
 
@@ -242,12 +251,20 @@ a {
         color: white;
     }
 
-    .candidates-king {
-        margin: 140px 0 0 0;
+
+    /*Área de candidatos*/
+
+
+    .candidates-king-and-queen {
+        margin: 70px 0 0 0;
     }
 
-    .div-title{
+    .div-title {
         display: flex;
         justify-content: center;
+    }
+
+    .musician {
+        display: none;
     }
 }
