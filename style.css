@@ -20,10 +20,8 @@
 }
 
 
-/*Pc/Laptop*/
-
-
 /*Área De navegação*/
+
 
 body {
     overflow-x: hidden;
@@ -77,6 +75,10 @@ a {
     color: black;
 }
 
+
+/*Área de apresentação*/
+
+
 .div-title {
     margin-bottom: 30px;
 }
@@ -127,9 +129,6 @@ a {
     height: 25em;
     width: 25em;
 }
-
-/*Celular*/
-
 
 @media (max-width: 460px) {
 
@@ -223,6 +222,8 @@ a {
     .link-navbar {
         color: white;
     }
+
+    /*Área de apresentação*/
 
     .div-title {
         margin: 0px 0 30px 40px;
