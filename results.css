@@ -9,18 +9,19 @@
 
 @font-face {
     font-family: 'adumu';
-    src: url(fonts/adumu/adumu.ttf);
+    src: url(static/fonts/adumu/adumu.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'well';
-    src: url(fonts/wellfleet/wellfleet-regular.ttf) format(truetype);
+    src: url(static/fonts/wellfleet/wellfleet-regular.ttf) format(truetype);
     font-weight: normal;
 }
 
 
 /*Área De navegação*/
+
 
 body {
     overflow-x: hidden;
@@ -75,11 +76,11 @@ a {
     color: black;
 }
 
-
 @media (max-width: 460px) {
 
 
     /*Área De navegação*/
+
 
     .navbar {
         display: flex;

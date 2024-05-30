@@ -9,21 +9,19 @@
 
 @font-face {
     font-family: 'adumu';
-    src: url(fonts/adumu/adumu.ttf);
+    src: url(static/fonts/adumu/adumu.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'well';
-    src: url(fonts/wellfleet/wellfleet-regular.ttf) format(truetype);
+    src: url(static/fonts/wellfleet/wellfleet-regular.ttf) format(truetype);
     font-weight: normal;
 }
 
 
-/*Pc/Laptop*/
-
-
 /*Área De navegação*/
+
 
 body {
     overflow-x: hidden;
@@ -77,6 +75,10 @@ a {
     color: black;
 }
 
+
+/*Área de apresentação*/
+
+
 .div-title {
     margin-bottom: 30px;
 }
@@ -127,9 +129,6 @@ a {
     height: 25em;
     width: 25em;
 }
-
-/*Celular*/
-
 
 @media (max-width: 460px) {
 
@@ -223,6 +222,8 @@ a {
     .link-navbar {
         color: white;
     }
+
+    /*Área de apresentação*/
 
     .div-title {
         margin: 0px 0 30px 40px;

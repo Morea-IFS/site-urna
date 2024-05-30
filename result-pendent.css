@@ -9,13 +9,13 @@
 
 @font-face {
     font-family: 'adumu';
-    src: url(fonts/adumu/adumu.ttf);
+    src: url(static/fonts/adumu/adumu.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'well';
-    src: url(fonts/wellfleet/wellfleet-regular.ttf) format(truetype);
+    src: url(static/fonts/wellfleet/wellfleet-regular.ttf) format(truetype);
     font-weight: normal;
 }
 
@@ -78,6 +78,32 @@ a {
 
     /*Área de resultados*/
 
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bonfire {
+    margin: 20px 20px 20px 20px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'adumu';
+    font-size: 32px;
+    user-select: none;
+}
+
+.text {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: 'well';
+    font-size: 23px;
+}
 
 @media (max-width: 460px) {
 
@@ -176,4 +202,11 @@ a {
     /*Área de resultados*/
 
 
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 19px;
+    }
 }
