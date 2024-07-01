@@ -134,25 +134,23 @@ a {
 /*Área inferior*/
 
 
-.footer {
-    display: flex;
-    width: 100%;
+.footer-content{
     background-color: black;
+    padding: 0 0 2rem 0;
 }
 
-.footer-div{
-    margin: 0 0 0 8%;
-    display: flex;
+.footer-logo{
+    margin: 0 0 0 7rem;
 }
 
-.hat-footer{
+.hat-footer {
     height: 120px;
     width: 120px;
     margin: 0 0 -60px -75px;
     filter: invert(1);
 }
 
-.title-footer{
+.title-footer {
     display: flex;
     font-family: 'adumu';
     color: white;
@@ -160,7 +158,7 @@ a {
     user-select: none;
 }
 
-.title-footer-2{
+.title-footer-2 {
     font-family: 'well';
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -168,24 +166,6 @@ a {
     width: 115px;
 }
 
-.div-footer-realization{
-    margin: 40px 0 0 100px;
-}
-
-.title-footer-realization {
-    font-family: 'well';
-    color: white;
-    font-size: 20px;
-}
-
-.footer-logos{
-    display: flex;
-    gap: 150px;
-}
-
-.footer-logos-item {
-    height: 90px;
-}
 
 @media (max-width: 460px) {
 
